@@ -58,7 +58,7 @@ int main() {
         if (argc == 0) continue;
 	
 	if (!isAllowed(argv[0])) {
-            fprintf(stderr, "NOT ALLOWED!\n");
+            printf("NOT ALLOWED!\n");
             continue;
         }
 
