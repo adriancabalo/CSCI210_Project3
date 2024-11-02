@@ -64,10 +64,10 @@ int main() {
 
 	if (strcmp(argv[0], "cd") == 0) {
             if (argc != 2) {
-                fprintf(stderr, "-rsh: cd: too many arguments\n");
+                printf("-rsh: cd: too many arguments\n");
             } 
 	    else if (chdir(argv[1]) != 0) {
-                perror("rsh: cd");
+                printf("rsh: cd\n");
             }
         } 
 	else if (strcmp(argv[0], "exit") == 0) {
